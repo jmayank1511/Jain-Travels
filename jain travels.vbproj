@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DCBF7753-1890-4122-846D-6792ABEC8323}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>jain_travels.My.MyApplication</StartupObject>
+    <RootNamespace>jain_travels</RootNamespace>
+    <AssemblyName>jain travels</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>jain travels.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>jain travels.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\visual basic project\Form1.vb">
+      <SubType>Form</SubType>
+      <Link>Form1.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\visual basic project\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+      <Link>Form1.Designer.vb</Link>
+    </Compile>
+    <Compile Include="About us.Designer.vb">
+      <DependentUpon>About us.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About us.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.vb">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ad_UserDetails.Designer.vb">
+      <DependentUpon>ad_UserDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ad_UserDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_ticket.Designer.vb">
+      <DependentUpon>Book_ticket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Book_ticket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bus details.Designer.vb">
+      <DependentUpon>bus details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bus details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="busDatabase.Designer.vb">
+      <DependentUpon>busDatabase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="busDatabase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact us.Designer.vb">
+      <DependentUpon>Contact us.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contact us.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ds.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home Page.Designer.vb">
+      <DependentUpon>Home Page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface1.vb" />
+    <Compile Include="jainDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>jainDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="jainDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>jainDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JainTravelsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JainTravelsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JainTravelsDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JainTravelsDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="JainTravelsDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JainTravelsDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="jain_travelsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>jain_travelsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="jain_travelsDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>jain_travelsDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="jain_travelsDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>jain_travelsDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Form.Designer.vb">
+      <DependentUpon>Login_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="my details.Designer.vb">
+      <DependentUpon>my details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="my details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="newBusForm.Designer.vb">
+      <DependentUpon>newBusForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="newBusForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pay Now.Designer.vb">
+      <DependentUpon>Pay Now.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pay Now.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seat_availability.Designer.vb">
+      <DependentUpon>Seat_availability.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seat_availability.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign Up.Designer.vb">
+      <DependentUpon>Sign Up.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sign Up.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ticket.Designer.vb">
+      <DependentUpon>ticket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ticket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User info.Designer.vb">
+      <DependentUpon>User info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.vb">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Userhomepage.Designer.vb">
+      <DependentUpon>Userhomepage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Userhomepage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\visual basic project\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <Link>Form1.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About us.resx">
+      <DependentUpon>About us.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ad_UserDetails.resx">
+      <DependentUpon>ad_UserDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_ticket.resx">
+      <DependentUpon>Book_ticket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bus details.resx">
+      <DependentUpon>bus details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="busDatabase.resx">
+      <DependentUpon>busDatabase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact us.resx">
+      <DependentUpon>Contact us.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home Page.resx">
+      <DependentUpon>Home Page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Form.resx">
+      <DependentUpon>Login_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="my details.resx">
+      <DependentUpon>my details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newBusForm.resx">
+      <DependentUpon>newBusForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pay Now.resx">
+      <DependentUpon>Pay Now.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seat_availability.resx">
+      <DependentUpon>Seat_availability.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sign Up.resx">
+      <DependentUpon>Sign Up.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ticket.resx">
+      <DependentUpon>ticket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User info.resx">
+      <DependentUpon>User info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Userhomepage.resx">
+      <DependentUpon>Userhomepage.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet3.xsc">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet3.xss">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Ds.xsc">
+      <DependentUpon>Ds.xsd</DependentUpon>
+    </None>
+    <None Include="Ds.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ds.xss">
+      <DependentUpon>Ds.xsd</DependentUpon>
+    </None>
+    <None Include="jainDataSet.xsc">
+      <DependentUpon>jainDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="jainDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>jainDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="jainDataSet.xss">
+      <DependentUpon>jainDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="jainDataSet1.xsc">
+      <DependentUpon>jainDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="jainDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>jainDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="jainDataSet1.xss">
+      <DependentUpon>jainDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="JainTravelsDataSet.xsc">
+      <DependentUpon>JainTravelsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="JainTravelsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JainTravelsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JainTravelsDataSet.xss">
+      <DependentUpon>JainTravelsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="JainTravelsDataSet1.xsc">
+      <DependentUpon>JainTravelsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="JainTravelsDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JainTravelsDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JainTravelsDataSet1.xss">
+      <DependentUpon>JainTravelsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="JainTravelsDataSet2.xsc">
+      <DependentUpon>JainTravelsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="JainTravelsDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JainTravelsDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JainTravelsDataSet2.xss">
+      <DependentUpon>JainTravelsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="jain_travelsDataSet.xsc">
+      <DependentUpon>jain_travelsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="jain_travelsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>jain_travelsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="jain_travelsDataSet.xss">
+      <DependentUpon>jain_travelsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="jain_travelsDataSet1.xsc">
+      <DependentUpon>jain_travelsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="jain_travelsDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>jain_travelsDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="jain_travelsDataSet1.xss">
+      <DependentUpon>jain_travelsDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="jain_travelsDataSet2.xsc">
+      <DependentUpon>jain_travelsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="jain_travelsDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>jain_travelsDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="jain_travelsDataSet2.xss">
+      <DependentUpon>jain_travelsDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="jain.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="JainTravels.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
